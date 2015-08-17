@@ -47,7 +47,7 @@ We will demonstrate with following example. Following example apply median filte
 Default Optimization in OpenCV
 ================================
 
-Many of the OpenCV functions are optimized using SSE2, AVX etc. It contains unoptimized code also. So if our system support these features, we should exploit them (almost all modern day processors support them). It is enabled by default while compiling. So OpenCV runs the optimized code if it is enabled, else it runs the unoptimized code. You can use **cv2.useOptimized()** to check if it is enabled/disabled and **cv2.setUseOptimized()** to enable/disable it. Let's see a simple example.
+Many of the OpenCV functions are optimized using SSE2, AVX etc. It contains unoptimized code also. So if our system supports these features, we should exploit them (almost all modern day processors support them). It is enabled by default while compiling. So OpenCV runs the optimized code if it is enabled, else it runs the unoptimized code. You can use **cv2.useOptimized()** to check if it is enabled/disabled and **cv2.setUseOptimized()** to enable/disable it. Let's see a simple example.
 ::
 
     # check if optimization is enabled
@@ -75,7 +75,7 @@ Measuring Performance in IPython
 
 Sometimes you may need to compare the performance of two similar operations. IPython gives you a magic command ``%timeit`` to perform this. It runs the code several times to get more accurate results. Once again, they are suitable to measure single line codes. 
 
-For example, do you know which of the following addition operation is more better, ``x = 5; y = x**2``, ``x = 5; y = x*x``, ``x = np.uint8([5]); y = x*x`` or ``y = np.square(x)`` ? We will find it with %timeit in IPython shell.
+For example, do you know which of the following addition operations is fastest: ``x = 5; y = x**2``, ``x = 5; y = x*x``, ``x = np.uint8([5]); y = x*x`` or ``y = np.square(x)`` ? We will find it with %timeit in IPython shell.
 ::
 
     In [10]: x = 5
