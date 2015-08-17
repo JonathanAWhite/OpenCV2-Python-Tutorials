@@ -30,7 +30,7 @@ For BGR :math:`\rightarrow` Gray conversion we use the flags ``cv2.COLOR_BGR2GRA
 Object Tracking
 ==================
 
-Now we know how to convert BGR image to HSV, we can use this to extract a colored object. In HSV, it is more easier to represent a color than RGB color-space. In our application, we will try to extract a blue colored object. So here is the method:
+Now we know how to convert BGR image to HSV, we can use this to extract a colored object. In HSV, it is easier to represent a color than RGB color-space. In our application, we will try to extract a blue colored object. So here is the method:
 
     * Take each frame of the video
     * Convert from BGR to HSV color-space
@@ -79,7 +79,7 @@ Below image shows tracking of the blue object:
               :alt: Blue Object Tracking
               :align: center
               
-.. note:: There are some noises in the image. We will see how to remove them in later chapters. 
+.. note:: There is some noise in the image. We will see how to remove it in later chapters. 
 
 .. note:: This is the simplest method in object tracking. Once you learn functions of contours, you can do plenty of things like find centroid of this object and use it to track the object, draw diagrams just by moving your hand in front of camera and many other funny stuffs. 
 
